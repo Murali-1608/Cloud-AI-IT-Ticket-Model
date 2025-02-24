@@ -37,6 +37,11 @@ def predict_ticket(ticket: TicketRequest):
 
     return {"predicted_category": int(predicted_category), "predicted_resolution_days": predicted_days}
 
+# Root endpoint to check if the API is running
+@app.get("/")
+def read_root():
+    return {"message": "API is running successfully"}
+
 # API endpoint
 @app.post("/predict")
 def get_prediction(ticket: TicketRequest):
