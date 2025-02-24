@@ -6,3 +6,4 @@ pydantic==1.10.4
 pickle5==0.0.12
 scipy
 setuptools
+wheel
